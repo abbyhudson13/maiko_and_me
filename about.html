@@ -1,0 +1,273 @@
+<!doctype html>
+
+
+
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/css?family=Dosis|Mansalva&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://kit.fontawesome.com/c9df37e61e.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/about_styles.css">
+
+<link rel="stylesheet" href="dropdown.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+ <script>
+
+ 	$(document).ready(function(){
+
+
+ 	
+ 	$(".product img").hover(function(){
+					var before = $(this).attr("src");
+					var after = $(this).attr("src2");
+					$(this).attr('src',after);
+				
+			
+				$(this).mouseout(function(){
+					$(this).attr('src',before);
+					
+					});
+
+
+				
+	});
+
+	});
+ 	
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+					
+
+
+ </script> <!--end of script-->
+
+<body>
+
+
+	<div class="header">
+	
+
+		<title>Maiko and Me</title>
+
+
+			<img src="img/maikoandme.jpg" width="300" />
+
+			<div class="nav_wrapper">
+				<div class="dropdown">
+	  				<button onclick="myFunction()" class="dropbtn btn" ><i class="fas fa-user-circle"></i></button>
+
+	  					<div id="myDropdown" class="dropdown-content">
+	    					<a href="#">My Account</a>
+	    					<a href="#">My Orders</a>
+	    					<a href="#">Contact Us</a>
+
+	  					</div>
+
+	  			</div>
+
+				<div class="dropdown">
+	  				<button onclick="myFunction()" class="dropbtn btn" ><i class="fa fa-heart"></i> </button>
+
+	  					<div id="myDropdown" class="dropdown-content">
+	    					<a href="#">Favourites</a>
+	  
+
+	  					</div>
+
+	  			</div>
+  			</div>
+
+	</div> <!--end header-->
+
+
+<div class="top">
+
+
+
+		<div class="menu">
+			<a href="/" class="menu_item">Dungarees</a>			
+
+			<a href="/" class="menu_item">Trousers</a>
+
+			<a href="/" class="menu_item">T-Shirts</a>
+
+			<a href="/" class="menu_item">Rompers</a>
+
+			<a href="/" class="menu_item">Jumpers</a>
+			
+			<a href="/" class="menu_item">Dresses</a>
+
+			<a href="/" class="menu_item">Socks</a>
+
+
+
+			<br style="clear:both;"/>
+		</div>	
+		
+</div> <!---end top-->
+
+<br style="clear:both;" />
+
+<div class="product">
+	
+		<div class="image">
+			<img id="batman_img" 
+
+				src="img/batman3.png" height=400
+				src2="img/natasha.jpeg" height=400/>
+
+		</div>
+
+
+
+
+		<div class="image">
+			<img id="whale_img"
+				src="img/whale3.png"
+				src2="img/whale.jpeg" height=400/>
+		
+		</div>
+
+
+		<div class="image">
+			<img id="avengers_img" 
+			src="img/avengers.png" height=400
+			src2="img/avengers2.jpeg" height=400/>
+
+		</div>
+
+
+
+
+		<div class="image">
+			<img id="whale_img"
+			src="img/whale3.png"
+			height="400"/>
+
+		</div>
+
+		<div class="image">
+			<img id="batman_img" 
+				src="img/batman3.png" height=400
+				src2="img/natasha.jpeg" height=400/>
+
+		</div>
+
+
+		<div class="image">
+			<img id="whale_img"
+				src="img/whale3.png"
+				height="400"/>
+
+		</div>
+
+
+		<div class="image">
+			<img id="batman_img" 
+
+			src="img/batman3.png" height=400
+			src2="img/natasha.jpeg" height=400/>
+
+		</div>
+
+
+		<div class="image">
+			<img id="batman_img" 
+
+			src="img/batman3.png" height=400
+			src2="img/natasha.jpeg" height=400/>
+
+		</div>
+
+
+
+
+</div> <!--end class product -->
+
+
+
+
+
+
+
+
+
+
+
+
+			
+<div class="main-text"> 
+	<h3>More about Maiko and Me</h3>
+
+		<p>Maiko and Me is a home made brand, designed and produced by Adele Webb and established in 2018. All items are modelled by Natasha Webb.
+		</p>
+		<p>
+		If you would like to know more about the Maiko and Me, please email dellybabes@hotmail.com </p>
+
+
+</div> <!--end of main text-->
+
+	<form action="action_page.php" style="border:1px solid #ccc">
+  		<div class= "footer">
+    		<h3>Sign Up</h3>
+    		<p>Please fill in this form to create an account.</p>
+    		<hr>
+
+   		<label for="email"><b>Email</b></	label>
+    	<input type="text" placeholder="Enter Email" name="email" required>
+
+    	<label for="psw"><b>Password</b></label>
+    	<input type="password" placeholder="Enter Password" name="psw" required>
+
+    	<label>
+      	<input type="checkbox" checked="checked" name="remember" style="	margin-bottom:15px"> Remember me
+    	</label>
+
+   	 <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+   		 <div class="clearfix">
+      		<button type="submit" class="signupbtn">Sign Up</button>
+      		<button type="button" class="cancelbtn">Cancel</button>
+    	</div>
+  		
+  	</div>
+
+	</form>
+
+
+
+
+		</body> <!--end body-->
+
+
+
+
+
+
+
+
+</html>

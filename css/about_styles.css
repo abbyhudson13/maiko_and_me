@@ -54,14 +54,6 @@ p.{display:inline;}
 
 }
 
-.top { 	
-	float:center;
-	display:grid;
-	grid-template: 25% 25% 25% 25%;
-	justify-content: center;
-
-
-}
 
 
 .form{

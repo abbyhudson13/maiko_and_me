@@ -1,9 +1,7 @@
 .tabs{
-	margin-top: 10px;
-	background: #4d004d;
 	color: white;
-	padding:10px 10px 0 10px;
 	display: flex;
+	border-bottom: 10px solid white;
 }
 
 .tabs h3 {
@@ -25,6 +23,7 @@
 .tabs-item:first-child{
 	border-radius: 10px 0 0 0;
 } 
+
 
 .tabs-item:last-child{
 	border-radius: 0 10px 0 0;
